@@ -1,0 +1,68 @@
+/* .App {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%
+} */
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin: 10px;
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;;
+  margin-top: 15px
+}
+.bottom {
+  margin: 0 50%;
+}
+
+.shipment {
+  width: 100%;
+  border: 2px dashed #ccc;
+  padding: 4px;
+}
+.details {
+  margin: 25px;
+}
+.details span {
+  font-size: 22px;
+  margin-bottom: 2px;
+}
+.details input {
+  width: 35%;
+  margin: 10px;
+}
+
+.cargo {
+  color: #fff;
+  background-color: #007bff;
+  padding: 10px;
+}
+.cargo-items {
+  display: flex;
+  margin: 14px;
+}
+.cargo-item {
+  margin: 6px 41px;
+  background-color: #8e8c8b;
+  padding: 19px;
+  border-radius: 10px;
+}
