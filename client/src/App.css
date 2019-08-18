@@ -36,11 +36,20 @@
 
 .shipment {
   width: 100%;
-  border: 2px dashed #ccc;
-  padding: 4px;
+    border: 2px solid #ccc;
+    padding: 4px;
+    box-shadow: 6px 4px 5px 0px rgba(232,216,223,0.95)
+}
+.item {
+  color:#d80d0d
 }
 .details {
   margin: 25px;
+  width: 58%;
+  margin: 25px auto;
+  box-shadow: 6px 4px 5px 0px rgba(232,216,223,0.95);
+  border: 1px solid #ccc;
+  padding: 0 86px;
 }
 .details span {
   font-size: 22px;
@@ -48,7 +57,7 @@
 }
 .details input {
   width: 35%;
-  margin: 10px;
+    margin: 10px;
 }
 
 .cargo {

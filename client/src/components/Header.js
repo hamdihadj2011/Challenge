@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <div className='header'>
         <div>
-          Sort By:
+          <span>Sort By: </span>
           <select
             name='Sorting'
             id=''

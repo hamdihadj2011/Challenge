@@ -45,10 +45,10 @@ export default class ShipmentDetails extends Component {
         </div>
         {shipment && (
           <div>
-            <p><span>id:</span>{shipment.id}</p>
-            <p><span>name:</span>{shipment.name}</p>
-            <p><span>Number of Cargo:{shipment.cargo && shipment.cargo.length}</span></p>
-            <span className='cargo'>Cargo Items:</span>{" "}
+            <p><span  className='item'>id:</span>{shipment.id}</p>
+            <p><span className='item'>name:</span>{shipment.name}</p>
+            <p><span className='item'>Number of Cargo:{shipment.cargo && shipment.cargo.length}</span></p>
+            <span className='cargo item'>Cargo Items:</span>{" "}
             <div className='cargo-items'>
             {shipment.cargo &&shipment.cargo.map((carg,index) => (
               
@@ -62,9 +62,9 @@ export default class ShipmentDetails extends Component {
                 </div>
               
               ))}</div>
-            <p><span>type:</span>{shipment.type}</p>
-            <p><span>destination:</span>{shipment.destination}</p>
-            <p><span>origin:</span>{shipment.origin}</p>
+            <p><span  className='item'>type:</span>{shipment.type}</p>
+            <p><span className='item'>destination:</span>{shipment.destination}</p>
+            <p><span className='item'>origin:</span>{shipment.origin}</p>
           </div>
         )}
         <Link to='/'>Go Back</Link>

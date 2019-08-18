@@ -6,9 +6,9 @@ import {Link} from 'react-router-dom'
         const {id,name,total}=this.props.shipment
         return (
             <div className='shipment' >
-                <p><span>Shipment Id:</span>{id}</p>
-                <p><span>Shipment Name:</span>{name}</p>
-                <p><span>Shipment Total:</span>{total}</p>
+                <p><span className='item'>Shipment Id:</span>{id}</p>
+                <p><span className='item'>Shipment Name:</span>{name}</p>
+                <p><span className='item'>Shipment Total:</span>{total}</p>
                 <Link to={`/${id}`}>Go to Details</Link>
             </div>
         )
