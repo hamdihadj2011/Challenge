@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-const url = process.env.REACT_APP_BASE_URL;
+import {Link} from 'react-router-dom'
 
 export default class ShipmentDetails extends Component {
   state = {
@@ -67,6 +67,7 @@ export default class ShipmentDetails extends Component {
             <p><span>origin:</span>{shipment.origin}</p>
           </div>
         )}
+        <Link to='/'>Go Back</Link>
       </div>
     );
   }
